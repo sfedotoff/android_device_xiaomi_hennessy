@@ -1,0 +1,23 @@
+From 475bc28606ea16ced9c6414e06c8b02b902829c4 Mon Sep 17 00:00:00 2001
+From: Lok Jian Ming <jianminglok@hotmail.com>
+Date: Thu, 5 May 2016 17:48:48 +0800
+Subject: [PATCH] Update security_settings_picker.xml
+
+---
+ res/xml/security_settings_picker.xml | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/res/xml/security_settings_picker.xml b/res/xml/security_settings_picker.xml
+index 035f4f6..2bfcc43 100644
+--- a/res/xml/security_settings_picker.xml
++++ b/res/xml/security_settings_picker.xml
+@@ -53,3 +53,9 @@
+             android:title="@string/unlock_set_unlock_fingerprint_title"
+             android:persistent="false"/>
+ </PreferenceScreen>
++     
++     <PreferenceScreen 
++            android:title="@string/fingerprint" 
++            android:key="fingerprint">
++        <intent android:targetPackage="ch.ione.safefingerprint" android:action="android.intent.action.MAIN" android:targetClass="ch.ione.safefingerprint.ui.FingerprintSettings" />
++</PreferenceScreen>

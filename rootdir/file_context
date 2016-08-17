@@ -1,0 +1,4 @@
+#############################
+# Mobicore and mcDaemon
+#
+/system/bin/tsdaemon	 	u:object_r:mobicore_exec:s0

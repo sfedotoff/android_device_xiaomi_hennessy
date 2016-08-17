@@ -1,0 +1,25 @@
+From 19d3619947ac0615d47e6bfcda12bee9d5aebc0c Mon Sep 17 00:00:00 2001
+From: Stanislav Fedotov <me@moneyseeker.ru>
+Date: Tue, 16 Aug 2016 20:39:27 +0300
+Subject: [PATCH] remove block-based system build
+
+Change-Id: Iee463e8cba1b6c78162c79c9030e9f9c0acec8fd
+---
+ core/Makefile | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/core/Makefile b/core/Makefile
+index 9ab196a..d5d47d6 100644
+--- a/core/Makefile
++++ b/core/Makefile
+@@ -1726,7 +1726,6 @@ $(INTERNAL_OTA_PACKAGE_TARGET): $(BUILT_TARGET_FILES_PACKAGE) $(DISTTOOLS)
+ 	@echo -e ${CL_YLW}"Package OTA:"${CL_RST}" $@"
+ 	$(hide) MKBOOTIMG=$(MKBOOTIMG) \
+ 	   $(OTA_FROM_TARGET_SCRIPT) -v \
+-	   --block \
+ 	   $(if $(WITH_LZMA_OTA), -z) \
+ 	   -p $(HOST_OUT) \
+ 	   -k $(KEY_CERT_PAIR) \
+-- 
+1.9.1
+

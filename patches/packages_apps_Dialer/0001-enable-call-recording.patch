@@ -1,0 +1,980 @@
+From 0d2830e91d2f85e8430d5de2a94164475d75c336 Mon Sep 17 00:00:00 2001
+From: barracuda7 <barracudaking@gmail.com>
+Date: Sat, 13 Feb 2016 16:07:58 +1100
+Subject: [PATCH] Enable universal call recording
+
+---
+ res/values-mcc202/config.xml | 19 -------------------
+ res/values-mcc204/config.xml | 22 ----------------------
+ res/values-mcc206/config.xml | 19 -------------------
+ res/values-mcc208/config.xml | 22 ----------------------
+ res/values-mcc214/config.xml | 22 ----------------------
+ res/values-mcc216/config.xml | 19 -------------------
+ res/values-mcc218/config.xml | 19 -------------------
+ res/values-mcc219/config.xml | 19 -------------------
+ res/values-mcc222/config.xml | 22 ----------------------
+ res/values-mcc226/config.xml | 24 ------------------------
+ res/values-mcc230/config.xml | 22 ----------------------
+ res/values-mcc231/config.xml | 19 -------------------
+ res/values-mcc232/config.xml | 19 -------------------
+ res/values-mcc234/config.xml | 22 ----------------------
+ res/values-mcc235/config.xml | 19 -------------------
+ res/values-mcc238/config.xml | 22 ----------------------
+ res/values-mcc240/config.xml | 22 ----------------------
+ res/values-mcc242/config.xml | 22 ----------------------
+ res/values-mcc244/config.xml | 22 ----------------------
+ res/values-mcc246/config.xml | 19 -------------------
+ res/values-mcc247/config.xml | 19 -------------------
+ res/values-mcc248/config.xml | 19 -------------------
+ res/values-mcc260/config.xml | 22 ----------------------
+ res/values-mcc262/config.xml | 19 -------------------
+ res/values-mcc268/config.xml | 19 -------------------
+ res/values-mcc270/config.xml | 19 -------------------
+ res/values-mcc272/config.xml | 19 -------------------
+ res/values-mcc278/config.xml | 19 -------------------
+ res/values-mcc280/config.xml | 19 -------------------
+ res/values-mcc284/config.xml | 19 -------------------
+ res/values-mcc293/config.xml | 19 -------------------
+ res/values-mcc310/config.xml | 19 -------------------
+ res/values-mcc362/config.xml | 19 -------------------
+ res/values-mcc505/config.xml | 19 -------------------
+ res/values/config.xml        |  4 ++--
+ 35 files changed, 2 insertions(+), 686 deletions(-)
+ delete mode 100644 res/values-mcc202/config.xml
+ delete mode 100644 res/values-mcc204/config.xml
+ delete mode 100644 res/values-mcc206/config.xml
+ delete mode 100644 res/values-mcc208/config.xml
+ delete mode 100644 res/values-mcc214/config.xml
+ delete mode 100644 res/values-mcc216/config.xml
+ delete mode 100644 res/values-mcc218/config.xml
+ delete mode 100644 res/values-mcc219/config.xml
+ delete mode 100644 res/values-mcc222/config.xml
+ delete mode 100644 res/values-mcc226/config.xml
+ delete mode 100644 res/values-mcc230/config.xml
+ delete mode 100644 res/values-mcc231/config.xml
+ delete mode 100644 res/values-mcc232/config.xml
+ delete mode 100644 res/values-mcc234/config.xml
+ delete mode 100755 res/values-mcc235/config.xml
+ delete mode 100644 res/values-mcc238/config.xml
+ delete mode 100644 res/values-mcc240/config.xml
+ delete mode 100644 res/values-mcc242/config.xml
+ delete mode 100644 res/values-mcc244/config.xml
+ delete mode 100644 res/values-mcc246/config.xml
+ delete mode 100644 res/values-mcc247/config.xml
+ delete mode 100644 res/values-mcc248/config.xml
+ delete mode 100644 res/values-mcc260/config.xml
+ delete mode 100644 res/values-mcc262/config.xml
+ delete mode 100644 res/values-mcc268/config.xml
+ delete mode 100644 res/values-mcc270/config.xml
+ delete mode 100644 res/values-mcc272/config.xml
+ delete mode 100644 res/values-mcc278/config.xml
+ delete mode 100644 res/values-mcc280/config.xml
+ delete mode 100644 res/values-mcc284/config.xml
+ delete mode 100644 res/values-mcc293/config.xml
+ delete mode 100644 res/values-mcc310/config.xml
+ delete mode 100644 res/values-mcc362/config.xml
+ delete mode 100644 res/values-mcc505/config.xml
+
+diff --git a/res/values-mcc202/config.xml b/res/values-mcc202/config.xml
+deleted file mode 100644
+index def954f..0000000
+--- a/res/values-mcc202/config.xml
++++ /dev/null
+@@ -1,19 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2014 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-<resources>
+-    <bool name="call_recording_enabled">false</bool>
+-</resources>
+diff --git a/res/values-mcc204/config.xml b/res/values-mcc204/config.xml
+deleted file mode 100644
+index 9fbbd54..0000000
+--- a/res/values-mcc204/config.xml
++++ /dev/null
+@@ -1,22 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2015 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-
+-<!--Allow recording for country: Netherlands-->
+-<!--Legal precedent source: http://blog.wetrecht.nl/telefoongesprekken-opnemen-als-bewijs-kan-dat/ -->
+-<resources>
+-
+-</resources>
+diff --git a/res/values-mcc206/config.xml b/res/values-mcc206/config.xml
+deleted file mode 100644
+index def954f..0000000
+--- a/res/values-mcc206/config.xml
++++ /dev/null
+@@ -1,19 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2014 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-<resources>
+-    <bool name="call_recording_enabled">false</bool>
+-</resources>
+diff --git a/res/values-mcc208/config.xml b/res/values-mcc208/config.xml
+deleted file mode 100644
+index 2474f5d..0000000
+--- a/res/values-mcc208/config.xml
++++ /dev/null
+@@ -1,22 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2014 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-
+-<!--Allow recording for country: France-->
+-<!--Legal precedent source: http://levesquelavoie.com/2011/11/la-legalite-de-lenregistrement-dune-conversation/-->
+-<resources>
+-
+-</resources>
+diff --git a/res/values-mcc214/config.xml b/res/values-mcc214/config.xml
+deleted file mode 100644
+index efc7c14..0000000
+--- a/res/values-mcc214/config.xml
++++ /dev/null
+@@ -1,22 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2015 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-
+-<!--Allow recording for country: Spain-->
+-<!--Legal precedent source: http://www.legalisconsultores.es/2014/04/es-legal-realizar-grabacionesse-pueden-aportar-como-prueba-en-juicios/ -->
+-<resources>
+-
+-</resources>
+diff --git a/res/values-mcc216/config.xml b/res/values-mcc216/config.xml
+deleted file mode 100644
+index def954f..0000000
+--- a/res/values-mcc216/config.xml
++++ /dev/null
+@@ -1,19 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2014 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-<resources>
+-    <bool name="call_recording_enabled">false</bool>
+-</resources>
+diff --git a/res/values-mcc218/config.xml b/res/values-mcc218/config.xml
+deleted file mode 100644
+index def954f..0000000
+--- a/res/values-mcc218/config.xml
++++ /dev/null
+@@ -1,19 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2014 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-<resources>
+-    <bool name="call_recording_enabled">false</bool>
+-</resources>
+diff --git a/res/values-mcc219/config.xml b/res/values-mcc219/config.xml
+deleted file mode 100644
+index def954f..0000000
+--- a/res/values-mcc219/config.xml
++++ /dev/null
+@@ -1,19 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2014 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-<resources>
+-    <bool name="call_recording_enabled">false</bool>
+-</resources>
+diff --git a/res/values-mcc222/config.xml b/res/values-mcc222/config.xml
+deleted file mode 100644
+index 6087b8b..0000000
+--- a/res/values-mcc222/config.xml
++++ /dev/null
+@@ -1,22 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2015 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-
+-<!--Allow recording for country: Italy-->
+-<!--Legal precedent source: http://www.altalex.com/index.php?idnot=53369 -->
+-<resources>
+-
+-</resources>
+diff --git a/res/values-mcc226/config.xml b/res/values-mcc226/config.xml
+deleted file mode 100644
+index 216906d..0000000
+--- a/res/values-mcc226/config.xml
++++ /dev/null
+@@ -1,24 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2014 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-
+-<!--Allow recording for country: Romania-->
+-<!--Legal precedent source: http://www.dsclex.ro/coduri/cciv2.htm
+-    http://www.dreptonline.ro/legislatie/codul_procedura_civila_consolidat.php
+-    http://www.dreptonline.ro/legislatie/codul_procedura_penala_2007.php -->
+-<resources>
+-
+-</resources>
+diff --git a/res/values-mcc230/config.xml b/res/values-mcc230/config.xml
+deleted file mode 100644
+index d6169db..0000000
+--- a/res/values-mcc230/config.xml
++++ /dev/null
+@@ -1,22 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2015 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-
+-<!--Allow recording for country: Czech Republic-->
+-<!--Legal precedent source: http://nalus.usoud.cz/Search/GetText.aspx?sz=1-191-05_2 -->
+-<resources>
+-
+-</resources>
+diff --git a/res/values-mcc231/config.xml b/res/values-mcc231/config.xml
+deleted file mode 100644
+index def954f..0000000
+--- a/res/values-mcc231/config.xml
++++ /dev/null
+@@ -1,19 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2014 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-<resources>
+-    <bool name="call_recording_enabled">false</bool>
+-</resources>
+diff --git a/res/values-mcc232/config.xml b/res/values-mcc232/config.xml
+deleted file mode 100644
+index def954f..0000000
+--- a/res/values-mcc232/config.xml
++++ /dev/null
+@@ -1,19 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2014 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-<resources>
+-    <bool name="call_recording_enabled">false</bool>
+-</resources>
+diff --git a/res/values-mcc234/config.xml b/res/values-mcc234/config.xml
+deleted file mode 100644
+index 84ea1e4..0000000
+--- a/res/values-mcc234/config.xml
++++ /dev/null
+@@ -1,22 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2014 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-
+-<!--Allow recording for country: United Kingdom-->
+-<!--Legal precedent source: http://www.ofcom.org.uk/static/archive/oftel/consumer/advice/faqs/prvfaq3.htm -->
+-<resources>
+-
+-</resources>
+diff --git a/res/values-mcc235/config.xml b/res/values-mcc235/config.xml
+deleted file mode 100755
+index 705c717..0000000
+--- a/res/values-mcc235/config.xml
++++ /dev/null
+@@ -1,19 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2014 The CyanogenMod Project
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-          http://www.apache.org/licenses/LICENSE-2.0
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-
+-<!--Allow recording for country: United Kingdom-->
+-<!--Legal precedent source: http://www.ofcom.org.uk/static/archive/oftel/consumer/advice/faqs/prvfaq3.htm -->
+-<resources>
+-
+-</resources>
+\ No newline at end of file
+diff --git a/res/values-mcc238/config.xml b/res/values-mcc238/config.xml
+deleted file mode 100644
+index e745c17..0000000
+--- a/res/values-mcc238/config.xml
++++ /dev/null
+@@ -1,22 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2015 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-
+-<!--Allow recording for country: Denmark-->
+-<!--Legal precedent source: https://www.retsinformation.dk/Forms/r0710.aspx?id=164192#Kap27 -->
+-<resources>
+-
+-</resources>
+diff --git a/res/values-mcc240/config.xml b/res/values-mcc240/config.xml
+deleted file mode 100644
+index 8f75521..0000000
+--- a/res/values-mcc240/config.xml
++++ /dev/null
+@@ -1,22 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2015 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-
+-<!--Allow recording for country: Sweden-->
+-<!--Legal precedent source: https://lagen.nu/begrepp/Olovlig_avlyssning -->
+-<resources>
+-
+-</resources>
+diff --git a/res/values-mcc242/config.xml b/res/values-mcc242/config.xml
+deleted file mode 100644
+index 4cd0818..0000000
+--- a/res/values-mcc242/config.xml
++++ /dev/null
+@@ -1,22 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2015 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-
+-<!--Allow recording for country: Norway-->
+-<!--Legal precedent source: https://www.datatilsynet.no/verktoy-skjema/Veiledere/Lydopptak-/ -->
+-<resources>
+-
+-</resources>
+diff --git a/res/values-mcc244/config.xml b/res/values-mcc244/config.xml
+deleted file mode 100644
+index 4eba15b..0000000
+--- a/res/values-mcc244/config.xml
++++ /dev/null
+@@ -1,22 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2015 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-
+-<!--Allow recording for country: Finland-->
+-<!--Legal precedent source: http://www.tietosuoja.fi/fi/index/ratkaisut/puheluidennauhoittaminen.html -->
+-<resources>
+-
+-</resources>
+diff --git a/res/values-mcc246/config.xml b/res/values-mcc246/config.xml
+deleted file mode 100644
+index def954f..0000000
+--- a/res/values-mcc246/config.xml
++++ /dev/null
+@@ -1,19 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2014 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-<resources>
+-    <bool name="call_recording_enabled">false</bool>
+-</resources>
+diff --git a/res/values-mcc247/config.xml b/res/values-mcc247/config.xml
+deleted file mode 100644
+index def954f..0000000
+--- a/res/values-mcc247/config.xml
++++ /dev/null
+@@ -1,19 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2014 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-<resources>
+-    <bool name="call_recording_enabled">false</bool>
+-</resources>
+diff --git a/res/values-mcc248/config.xml b/res/values-mcc248/config.xml
+deleted file mode 100644
+index def954f..0000000
+--- a/res/values-mcc248/config.xml
++++ /dev/null
+@@ -1,19 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2014 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-<resources>
+-    <bool name="call_recording_enabled">false</bool>
+-</resources>
+diff --git a/res/values-mcc260/config.xml b/res/values-mcc260/config.xml
+deleted file mode 100644
+index c2876e0..0000000
+--- a/res/values-mcc260/config.xml
++++ /dev/null
+@@ -1,22 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2015 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-
+-<!--Allow recording for country: Poland-->
+-<!--Legal precedent source: http://www.giodo.gov.pl/data/filemanager_pl/467.doc -->
+-<resources>
+-
+-</resources>
+diff --git a/res/values-mcc262/config.xml b/res/values-mcc262/config.xml
+deleted file mode 100644
+index def954f..0000000
+--- a/res/values-mcc262/config.xml
++++ /dev/null
+@@ -1,19 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2014 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-<resources>
+-    <bool name="call_recording_enabled">false</bool>
+-</resources>
+diff --git a/res/values-mcc268/config.xml b/res/values-mcc268/config.xml
+deleted file mode 100644
+index def954f..0000000
+--- a/res/values-mcc268/config.xml
++++ /dev/null
+@@ -1,19 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2014 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-<resources>
+-    <bool name="call_recording_enabled">false</bool>
+-</resources>
+diff --git a/res/values-mcc270/config.xml b/res/values-mcc270/config.xml
+deleted file mode 100644
+index def954f..0000000
+--- a/res/values-mcc270/config.xml
++++ /dev/null
+@@ -1,19 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2014 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-<resources>
+-    <bool name="call_recording_enabled">false</bool>
+-</resources>
+diff --git a/res/values-mcc272/config.xml b/res/values-mcc272/config.xml
+deleted file mode 100644
+index def954f..0000000
+--- a/res/values-mcc272/config.xml
++++ /dev/null
+@@ -1,19 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2014 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-<resources>
+-    <bool name="call_recording_enabled">false</bool>
+-</resources>
+diff --git a/res/values-mcc278/config.xml b/res/values-mcc278/config.xml
+deleted file mode 100644
+index def954f..0000000
+--- a/res/values-mcc278/config.xml
++++ /dev/null
+@@ -1,19 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2014 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-<resources>
+-    <bool name="call_recording_enabled">false</bool>
+-</resources>
+diff --git a/res/values-mcc280/config.xml b/res/values-mcc280/config.xml
+deleted file mode 100644
+index def954f..0000000
+--- a/res/values-mcc280/config.xml
++++ /dev/null
+@@ -1,19 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2014 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-<resources>
+-    <bool name="call_recording_enabled">false</bool>
+-</resources>
+diff --git a/res/values-mcc284/config.xml b/res/values-mcc284/config.xml
+deleted file mode 100644
+index def954f..0000000
+--- a/res/values-mcc284/config.xml
++++ /dev/null
+@@ -1,19 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2014 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-<resources>
+-    <bool name="call_recording_enabled">false</bool>
+-</resources>
+diff --git a/res/values-mcc293/config.xml b/res/values-mcc293/config.xml
+deleted file mode 100644
+index def954f..0000000
+--- a/res/values-mcc293/config.xml
++++ /dev/null
+@@ -1,19 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2014 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-<resources>
+-    <bool name="call_recording_enabled">false</bool>
+-</resources>
+diff --git a/res/values-mcc310/config.xml b/res/values-mcc310/config.xml
+deleted file mode 100644
+index def954f..0000000
+--- a/res/values-mcc310/config.xml
++++ /dev/null
+@@ -1,19 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2014 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-<resources>
+-    <bool name="call_recording_enabled">false</bool>
+-</resources>
+diff --git a/res/values-mcc362/config.xml b/res/values-mcc362/config.xml
+deleted file mode 100644
+index def954f..0000000
+--- a/res/values-mcc362/config.xml
++++ /dev/null
+@@ -1,19 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2014 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-<resources>
+-    <bool name="call_recording_enabled">false</bool>
+-</resources>
+diff --git a/res/values-mcc505/config.xml b/res/values-mcc505/config.xml
+deleted file mode 100644
+index def954f..0000000
+--- a/res/values-mcc505/config.xml
++++ /dev/null
+@@ -1,19 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!--
+-     Copyright (C) 2014 The CyanogenMod Project
+-
+-     Licensed under the Apache License, Version 2.0 (the "License");
+-     you may not use this file except in compliance with the License.
+-     You may obtain a copy of the License at
+-
+-          http://www.apache.org/licenses/LICENSE-2.0
+-
+-     Unless required by applicable law or agreed to in writing, software
+-     distributed under the License is distributed on an "AS IS" BASIS,
+-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-     See the License for the specific language governing permissions and
+-     limitations under the License.
+--->
+-<resources>
+-    <bool name="call_recording_enabled">false</bool>
+-</resources>
+diff --git a/res/values/config.xml b/res/values/config.xml
+index cb8bb25..265ad72 100644
+--- a/res/values/config.xml
++++ b/res/values/config.xml
+@@ -15,7 +15,7 @@
+      limitations under the License.
+ -->
+ <resources>
+-    <bool name="call_recording_enabled">false</bool>
+-    <integer name="call_recording_audio_source">1</integer>
++    <bool name="call_recording_enabled">true</bool>
++    <integer name="call_recording_audio_source">4</integer>
+     <integer name="call_recording_audio_encoder">0</integer>
+ </resources>

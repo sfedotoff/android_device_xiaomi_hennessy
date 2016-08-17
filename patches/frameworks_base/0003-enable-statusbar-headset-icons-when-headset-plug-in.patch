@@ -1,0 +1,78 @@
+diff -ruN /home/developer/android/frameworks/base/core/res/res/values/config.xml /home/developer/topatch/frameworks/base/core/res/res/values/config.xml
+--- core/res/res/values/config.xml	2016-08-02 23:09:01.949463901 +0300
++++ core/res/res/values/config.xml	2016-08-03 15:44:49.082766816 +0300
+@@ -48,6 +48,7 @@
+        <item><xliff:g id="id">alarm_clock</xliff:g></item>
+        <item><xliff:g id="id">secure</xliff:g></item>
+        <item><xliff:g id="id">clock</xliff:g></item>
++       <item><xliff:g id="id">headset</xliff:g></item>
+     </string-array>
+ 
+     <!-- Flag indicating whether the surface flinger has limited
+Двоичные файлы /home/developer/android/frameworks/base/packages/SystemUI/res/drawable-xhdpi/stat_sys_headset_mic.png и /home/developer/topatch/frameworks/base/packages/SystemUI/res/drawable-xhdpi/stat_sys_headset_mic.png различаются
+Двоичные файлы /home/developer/android/frameworks/base/packages/SystemUI/res/drawable-xhdpi/stat_sys_headset.png и /home/developer/topatch/frameworks/base/packages/SystemUI/res/drawable-xhdpi/stat_sys_headset.png различаются
+diff -ruN /home/developer/android/frameworks/base/packages/SystemUI/res/values/strings.xml /home/developer/topatch/frameworks/base/packages/SystemUI/res/values/strings.xml
+--- packages/SystemUI/res/values/strings.xml	2016-08-02 23:09:37.373464320 +0300
++++ packages/SystemUI/res/values/strings.xml	2016-08-03 15:45:56.690769337 +0300
+@@ -690,6 +690,8 @@
+          linebreak to position it correctly.  [CHAR LIMIT=45] -->
+     <string name="ssl_ca_cert_warning">Network may\nbe monitored</string>
+ 
++    <string name="headset_enabled">Headset Enabled.</string>
++
+     <!-- Description of the unlock target in the Slide unlock screen. [CHAR LIMIT=NONE] -->
+     <string name="description_target_search">Search</string>
+     <!-- Description of the up direction in which one can to slide the handle in the Slide unlock screen. [CHAR LIMIT=NONE] -->
+diff -ruN /home/developer/android/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/phone/PhoneStatusBarPolicy.java /home/developer/topatch/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/phone/PhoneStatusBarPolicy.java
+--- packages/SystemUI/src/com/android/systemui/statusbar/phone/PhoneStatusBarPolicy.java	2016-08-02 23:09:37.685464324 +0300
++++ packages/SystemUI/src/com/android/systemui/statusbar/phone/PhoneStatusBarPolicy.java	2016-08-03 15:55:44.410791255 +0300
+@@ -131,6 +131,9 @@
+             else if (action.equals(TelecomManager.ACTION_CURRENT_TTY_MODE_CHANGED)) {
+                 updateTTY(intent);
+             }
++            else if (action.equals(Intent.ACTION_HEADSET_PLUG)) {
++                updateHeadset(intent);
++            }
+             else if (action.equals(Intent.ACTION_USER_SWITCHED)) {
+                 updateAlarm();
+             }
+@@ -170,6 +173,7 @@
+         filter.addAction(TelephonyIntents.ACTION_SIM_STATE_CHANGED);
+         filter.addAction(TelecomManager.ACTION_CURRENT_TTY_MODE_CHANGED);
+         filter.addAction(Intent.ACTION_USER_SWITCHED);
++        filter.addAction(Intent.ACTION_HEADSET_PLUG);
+         mContext.registerReceiver(mIntentReceiver, filter, null, mHandler);
+ 
+         int numPhones = TelephonyManager.getDefault().getPhoneCount();
+@@ -417,6 +421,31 @@
+         }
+     }
+ 
++    private final void updateHeadset(Intent intent) {
++        final String action = intent.getAction();
++        final int state = intent.getIntExtra("state", 4);
++        final int mic = intent.getIntExtra("microphone", 4);
++
++        switch (state) {
++        case 0:
++            try{
++                mService.setIconVisibility("headset", false);
++            } catch (Exception e) {
++                //Log.i("StatusBar Headset", "frist time to run");
++                }
++        break;
++        case 1:
++            if (mic == 1)
++                mService.setIcon("headset", R.drawable.stat_sys_headset_mic, 0,
++                    mContext.getResources().getString(R.string.headset_enabled));
++            else
++                mService.setIcon("headset", R.drawable.stat_sys_headset, 0,
++                    mContext.getResources().getString(R.string.headset_enabled));
++            mService.setIconVisibility("headset", true);
++        break;
++        }
++    }
++
+     private void updateCast() {
+         boolean isCasting = false;
+         for (CastDevice device : mCast.getCastDevices()) {
